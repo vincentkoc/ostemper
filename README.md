@@ -3,7 +3,9 @@
 [![Build Status](https://travis-ci.org/koconder/ostemper.svg?branch=master)](https://travis-ci.org/koconder/ostemper) [![Donate BTC](https://img.shields.io/badge/donate-BTC-orange.svg)](https://github.com/koconder/ostemper#contributing-and-donations) [![Donate ETH](https://img.shields.io/badge/donate-ETH-orange.svg)](https://etherdonation.com/d?to=0xe6fbd8de8157934767867022b7a8e8691d8df3dc)
 
 **OS Temper**
+
 *Automatic Hardening and Tweaks for OS X*
+
 This script is an "all-in-one" solution for a large number of security fixes, recommended tweaks and first time setup for Mac OS X operating system. This has only been tested for OSX version 10.13.x
 
 ## Screenshot
