@@ -1,4 +1,4 @@
-![](docs/logo.png)
+![OS Temper logo](docs/logo.png)
 
 [![Build Status](https://travis-ci.org/koconder/ostemper.svg?branch=master)](https://travis-ci.org/koconder/ostemper) [![Donate BTC](https://img.shields.io/badge/donate-BTC-orange.svg)](https://github.com/koconder/ostemper#contributing-and-donations) [![Donate ETH](https://img.shields.io/badge/donate-ETH-orange.svg)](https://etherdonation.com/d?to=0xe6fbd8de8157934767867022b7a8e8691d8df3dc)
 
@@ -6,26 +6,22 @@
 *Automatic Hardening and Tweaks for OS X*
 This script is an "all-in-one" solution for a large number of security fixes, recommended tweaks and first time setup for Mac OS X operating system. This has only been tested for OSX version 10.13.x
 
-## Requirements and Running
-### Platform
-- `mac_os_x`
+## Screenshot
+![OS Temper Screenshot](docs/screenshot.png)
 
-### OS Versions Supported
-- `10.13.x`
+## Running OS Temper
+### Requirements
+**Platform** `mac_os_x`
+**OS Versions Supported** `10.13.x`
 
-### Running OS Temper
--  You would need to download the ostemper.sh file into your target machine.
--  Then launch ostemper using `./ostemper.sh`
-
-## Install and Run
-### Easy Install Method
+### Quick Method
 For quick setup and running based on the default configuration as per the current release in Github. If you would like to modify please feel free to fork and make any changes as needed. Open Terminal app and run:
 
     curl -fsSL https://raw.githubusercontent.com/koconder/ostemper/master/ostemper.sh | sudo bash
 
 
-### Git Pull
-If you have pulled the script down using Git, you have two features avalible for use, first is the out of the box automated hardening and installation, the other is automatic system-wide updates and cleaning.
+### Other Methods
+If you have pulled the script down using Git you can run the script directly.
 
 **Auto-Harden**
 
