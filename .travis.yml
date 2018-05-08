@@ -1,3 +1,23 @@
+language: bash
+sudo: required
+
+os:
+- osx
+
+install:
+  # Install Shellcheck (github.com/koalaman/shellcheck#travis-ci)
+  #- scversion="stable" # or "v0.4.7", or "latest"
+  #- wget "https://storage.googleapis.com/shellcheck/shellcheck-$scversion.linux.x86_64.tar.xz"
+  #- tar --xz -xvf "shellcheck-$scversion.linux.x86_64.tar.xz"
+  #- shellcheck() { "shellcheck-$scversion/shellcheck" "$@"; }
+  #- shellcheck --version
+  # OS X: install the dash and checkbashisms script
+  - if test "$TRAVIS_OS_NAME" = osx; then brew update && brew install dash checkbashisms && pip install bashate; fi
+
+script:
+- tests/ostemper-shellchecks.sh
+
+
 sudo: required
 dist: trusty
 language: bash
