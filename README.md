@@ -18,6 +18,24 @@ This script is an "all-in-one" solution for a large number of security fixes, re
 - `ostemper.sh` - You would need to download the ostemper.sh file into your target machine. From there in terminal you need to enable the file for execution using: `chmod +x ostemper.sh`
 -  Then launch ostemper using `./ostemper.sh`
 
+## Install and Run
+### Easy Install Method
+For quick setup and running based on the default configuration as per the current release in Github. If you would like to modify please feel free to fork and make any changes as needed. Open Terminal app and run:
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/koconder/ostemper/master/ostemper.sh)"
+
+
+### Git Pull
+If you have pulled the script down using Git, you have two features avalible for use, first is the out of the box automated hardening and installation, the other is automatic system-wide updates and cleaning.
+
+**Auto-Harden**
+
+    ./ostemper.sh
+
+**Auto-Update**
+
+    ./ostemper-update.sh
+
 ## Features and Functionality
 ### Security
 - Disabling a number of potentially insecure services
@@ -43,15 +61,25 @@ This script is an "all-in-one" solution for a large number of security fixes, re
 ## References and Sources
 OS Temper is built upon the works and ideas from other scripts and community discussions, you can find a list of the sources below.
 
-- https://github.com/Edditoria/dotfiles
-- https://github.com/caskroom/homebrew-cask
-- https://github.com/pablopunk/mac-fresh-install
-- https://github.com/nicolinuxfr/macOS-post-installation
-- https://github.com/kiriaze/mac-dev-env
-- https://github.com/filipmaelbrancke/mac-install
-- https://github.com/jeremybradbury/mac-php-dev-env
-- https://cipherli.st/
-- https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/470580/osx-provisioning-script.sh.txt
+*Automated Installs:*
+- [github.com/Edditoria/dotfiles](https://github.com/Edditoria/dotfiles)
+- [github.com/caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
+- [github.com/pablopunk/mac-fresh-install
+](https://github.com/pablopunk/mac-fresh-install)
+
+*System and Security Tweaks:*
+- [github.com/nicolinuxfr/macOS-post-installation](https://github.com/nicolinuxfr/macOS-post-installation)
+- [cipherli.st](https://cipherli.st/)
+- [gov.uk](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/470580/osx-provisioning-script.sh.txt)
+
+*Developer Friendly Tweaks:*
+- [github.com/kiriaze/mac-dev-env](https://github.com/kiriaze/mac-dev-env)
+- [github.com/filipmaelbrancke/mac-install](https://github.com/filipmaelbrancke/mac-install)
+- [github.com/jeremybradbury/mac-php-dev-env](https://github.com/jeremybradbury/mac-php-dev-env)
+
+*OS Temper terminal logic and functionality*:
+- [github.com/Winetricks/winetricks](https://github.com/Winetricks/winetricks)
+
 
 ## License and Authors
 Author: Vincent Koc (vincent@loophole.eu)
