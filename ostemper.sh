@@ -18,8 +18,9 @@
 # Colors from https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
 echo -e
 echo -e "\033[0;33m############################################################"
-echo -e "  OS Tamper :: Automatic OS Hardening and Tweaks"
+echo -e "  OS Temper :: Automatic OS Hardening and Tweaks"
 echo -e "############################################################\033[0m"
+echo -e
 
 
 # Disable if not running as sudo
@@ -32,12 +33,24 @@ fi
 # Validate login
 sudo -v
 echo -e "[\033[32m+\033[m] Login validated as sudo/root"
-echo -e
 
-echo -e "[\033[33m?\033[m] Changing file permissions for users perefernce files"
+# Validate preference files
+echo -e "[\033[33m?\033[m] Resetting file permissions for users pref files before starting"
 chmod 755 ~/Library/Preferences/ >/dev/null
 
+# System and user information for logging
+echo -e
+echo -e
+echo -e ":::"
+echo -e "::: Current machine and user information"
+echo -e ":::"
+	echo -e "\t|- [\033[33m?\033[m] Current User: $(id -u -n)"
+	echo -e "\t|- [\033[33m?\033[m] Current Hostname: $(hostname)"
+	echo -e "\t\- [\033[33m?\033[m] Kernel and Timestamp: $(uname -v)"
+
 # Starting system tweaks
+echo -e
+echo -e
 echo -e ":::"
 echo -e "::: Starting System and Developer Tweaks"
 echo -e ":::"
@@ -126,6 +139,8 @@ echo -e ":::"
 	#defaults write com.apple.universalaccess reduceTransparency -bool true
 
 # Starting system tweaks
+echo -e
+echo -e
 echo -e ":::"
 echo -e "::: Starting Developer Tweaks"
 echo -e ":::"
@@ -150,6 +165,8 @@ echo -e ":::"
 
 
 # Starting intial security tweaks
+echo -e
+echo -e
 echo -e ":::"
 echo -e "::: Starting Security Tweaks - Inital"
 echo -e ":::"
@@ -194,6 +211,8 @@ echo -e ":::"
 	echo -e
 
 # Starting intial security tweaks
+echo -e
+echo -e
 echo -e ":::"
 echo -e "::: Starting Security Tweaks - Privacy"
 echo -e ":::"
@@ -222,6 +241,8 @@ echo -e ":::"
 	defaults write com.apple.Safari.plist WebsiteSpecificSearchEnabled -bool NO
 
 # Starting intial security tweaks
+echo -e
+echo -e
 echo -e ":::"
 echo -e "::: Starting Security Tweaks - Calling Home"
 echo -e ":::"
@@ -305,13 +326,14 @@ echo -e ":::"
 	do
 		sudo launchctl unload -w /System/Library/LaunchAgents/${agent}.plist >/dev/null 2>/dev/null
 		#launchctl unload -w /System/Library/LaunchAgents/${agent}.plist >/dev/null 2>/dev/null
-		echo -e "\t\- [\033[32m+\033[m] Disable call home / Agent ${agent} disabled"
+		echo -e "\t\- [\033[32m+\033[m] Disabled Agent: (${agent})"
 	done
 
 	for daemon in "${DAEMONS[@]}"
 	do
 		sudo launchctl unload -w /System/Library/LaunchDaemons/${daemon}.plist >/dev/null 2>/dev/null
 		#launchctl unload -w /System/Library/LaunchDaemons/${daemon}.plist >/dev/null 2>/dev/null
-		echo -e "\t\- [\033[32m+\033[m] Disable call home / Daemon ${daemon} disabled"
+		echo -e "\t\- [\033[32m+\033[m] Disabled Daemon: (${daemon})"
 	done
+
 
