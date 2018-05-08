@@ -33,10 +33,10 @@ command shellcheck --version > /dev/null || w_die "shellcheck must be installed!
 
 # Different versions can give different results:
 
-echo "======================== Begin bashate version info ==========================="
+#echo "======================== Begin bashate version info ==========================="
 ## bashate doesn't have a --version option (as of bashate-0.3.1)
-bashate --version
-echo "======================== End checkbashisms version info ==========================="
+#bashate --version
+#echo "======================== End bashate version info ==========================="
 
 echo "======================== Begin checkbashisms version info ==========================="
 checkbashisms --version
@@ -63,10 +63,10 @@ for shellscript in $files_to_check; do
     echo "Checking ${shellscript} with shellcheck:"
     w_try shellcheck -s sh "${shellscript}"
 
-    echo "Checking ${shellscript} with bashate:"
+    #echo "Checking ${shellscript} with bashate:"
     # Can't ignore individual things for now, filed bug:
     # https://bugs.launchpad.net/bash8/+bug/1698088
     # E006=line length check
     # E010=do/while same line (in some perl in winetricks)
-    w_try bashate -i E006,E010 "${shellscript}"
+    #w_try bashate -i E006,E010 "${shellscript}"
 done

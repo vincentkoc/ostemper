@@ -8,9 +8,11 @@ install:
   # OS X: install the dash and checkbashisms script
   - brew update
   - brew install dash checkbashisms shellcheck
-  # Install Shellcheck 
-  - curl https://bootstrap.pypa.io/get-pip.py | sudo python
-  - sudo -H pip install --user bashate
+  # Install bashate 
+  #- curl https://bootstrap.pypa.io/get-pip.py | sudo python
+  #- export PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin"
+  #- export PATH="/var/root/Library/Python/2.7/bin:$PATH"
+  #- sudo -H pip install --user bashate
 
 script:
 - tests/ostemper-shellchecks.sh
