@@ -31,10 +31,6 @@ w_try() {
 command checkbashisms --help > /dev/null || w_die "checkbashisms must be installed!"
 command shellcheck --version > /dev/null || w_die "shellcheck must be installed!"
 
-if [ ! -f Makefile ] ; then
-    w_die "$0 should be run from the top of the source tree"
-fi
-
 # Different versions can give different results:
 
 echo "======================== Begin bashate version info ==========================="
