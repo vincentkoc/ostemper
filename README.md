@@ -14,6 +14,7 @@ This script is an "all-in-one" solution for a large number of security fixes, re
 ## Running OS Temper
 ### Requirements
 **Platform** `mac_os_x`
+
 **OS Versions Supported** `10.13.x`
 
 ### Quick Method
