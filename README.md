@@ -1,9 +1,8 @@
 # OS Temper
 
-![
-](docs/logo.png)
+![](docs/logo.png)
 
-[![Build Status](https://travis-ci.org/koconder/ostemper.svg?branch=master)](https://travis-ci.org/koconder/ostemper)
+[![Build Status](https://travis-ci.org/koconder/ostemper.svg?branch=master)](https://travis-ci.org/koconder/ostemper) [![Donate BTC](https://img.shields.io/badge/donate-BTC-orange.svg)](bitcoin:14v9knBDAmJAMxWovuLfy7YkLDyfq8phNb) [![Donate ETH](https://img.shields.io/badge/donate-ETH-orange.svg)](https://etherdonation.com/d?to=0xe6fbd8de8157934767867022b7a8e8691d8df3dc)
 
 This script is an "all-in-one" solution for a large number of security fixes, recommended tweaks and first time setup for Mac OS X operating system. This has only been tested for OSX version 10.13.x
 
@@ -82,6 +81,13 @@ OS Temper is built upon the works and ideas from other scripts and community dis
 *OS Temper terminal logic and functionality*:
 - [github.com/Winetricks/winetricks](https://github.com/Winetricks/winetricks)
 
+## Contributing and Donations
+
+If you find something interesting or would like to contribute, please open issue and start disccussion. Feel free to fork and pull request.
+If OS Tamper has helped you out feel free to donate via BTC/ETH or to the EFF
+- BTC: 14v9knBDAmJAMxWovuLfy7YkLDyfq8phNb
+- ETH: 0xe6fbd8de8157934767867022b7a8e8691d8df3dc
+- EFF: (https://supporters.eff.org/donate/button)
 
 ## License and Authors
 Author: Vincent Koc (vincent@loophole.eu)
