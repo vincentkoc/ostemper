@@ -12,7 +12,10 @@ install:
   #- shellcheck() { "shellcheck-$scversion/shellcheck" "$@"; }
   #- shellcheck --version
   # OS X: install the dash and checkbashisms script
-  - if test "$TRAVIS_OS_NAME" = osx; then brew update && brew install dash checkbashisms && pip install bashate; fi
+  - brew update
+  - brew install dash checkbashisms shellcheck
+  - sudo easy_install pip
+  - pip install bashate
 
 script:
 - tests/ostemper-shellchecks.sh
