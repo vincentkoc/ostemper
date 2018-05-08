@@ -5,17 +5,12 @@ os:
 - osx
 
 install:
-  # Install Shellcheck (github.com/koalaman/shellcheck#travis-ci)
-  #- scversion="stable" # or "v0.4.7", or "latest"
-  #- wget "https://storage.googleapis.com/shellcheck/shellcheck-$scversion.linux.x86_64.tar.xz"
-  #- tar --xz -xvf "shellcheck-$scversion.linux.x86_64.tar.xz"
-  #- shellcheck() { "shellcheck-$scversion/shellcheck" "$@"; }
-  #- shellcheck --version
   # OS X: install the dash and checkbashisms script
   - brew update
   - brew install dash checkbashisms shellcheck
-  - sudo easy_install pip
-  - pip install bashate
+  # Install Shellcheck 
+  - curl https://bootstrap.pypa.io/get-pip.py | sudo python
+  - sudo -H pip install --user bashate
 
 script:
 - tests/ostemper-shellchecks.sh
