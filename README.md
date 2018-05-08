@@ -69,6 +69,8 @@ OS Temper is built upon the works and ideas from other scripts and community dis
 
 *System and Security Tweaks:*
 - [github.com/nicolinuxfr/macOS-post-installation](https://github.com/nicolinuxfr/macOS-post-installation)
+- [github.com/andrewparadi/.files](https://github.com/andrewparadi/.files)
+- [github.com/karek314/macOS-home-call-drop](https://github.com/karek314/macOS-home-call-drop)
 - [cipherli.st](https://cipherli.st/)
 - [gov.uk](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/470580/osx-provisioning-script.sh.txt)
 
