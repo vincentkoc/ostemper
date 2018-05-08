@@ -1,9 +1,9 @@
-# OS Temper
-
 ![](docs/logo.png)
 
 [![Build Status](https://travis-ci.org/koconder/ostemper.svg?branch=master)](https://travis-ci.org/koconder/ostemper) [![Donate BTC](https://img.shields.io/badge/donate-BTC-orange.svg)](https://github.com/koconder/ostemper#contributing-and-donations) [![Donate ETH](https://img.shields.io/badge/donate-ETH-orange.svg)](https://etherdonation.com/d?to=0xe6fbd8de8157934767867022b7a8e8691d8df3dc)
 
+**OS Temper**
+*Automatic Hardening and Tweaks for OS X*
 This script is an "all-in-one" solution for a large number of security fixes, recommended tweaks and first time setup for Mac OS X operating system. This has only been tested for OSX version 10.13.x
 
 ## Requirements and Running
@@ -14,14 +14,14 @@ This script is an "all-in-one" solution for a large number of security fixes, re
 - `10.13.x`
 
 ### Running OS Temper
-- `ostemper.sh` - You would need to download the ostemper.sh file into your target machine. From there in terminal you need to enable the file for execution using: `chmod +x ostemper.sh`
+-  You would need to download the ostemper.sh file into your target machine.
 -  Then launch ostemper using `./ostemper.sh`
 
 ## Install and Run
 ### Easy Install Method
 For quick setup and running based on the default configuration as per the current release in Github. If you would like to modify please feel free to fork and make any changes as needed. Open Terminal app and run:
 
-    bash -c "$(curl -fsSL https://raw.githubusercontent.com/koconder/ostemper/master/ostemper.sh)"
+    curl -fsSL https://raw.githubusercontent.com/koconder/ostemper/master/ostemper.sh | sudo bash
 
 
 ### Git Pull
@@ -29,11 +29,7 @@ If you have pulled the script down using Git, you have two features avalible for
 
 **Auto-Harden**
 
-    ./ostemper.sh
-
-**Auto-Update**
-
-    ./ostemper-update.sh
+    sudo ./ostemper.sh
 
 ## Features and Functionality
 ### Security
@@ -56,6 +52,20 @@ If you have pulled the script down using Git, you have two features avalible for
 
 ### Tweaks
 - Finder tweaks
+
+## To-Do
+A number of to-do's in progress:
+
+- User creation for first-time setup
+- Homebrew intergration
+- Common app installation
+- App and system updates
+- Rules and configuration for commonly used apps
+- Cleaning scripts to remove log's and trace files
+- Bash profile and terminal tweaks
+- Developer friendly setup for LAMP/LEMP, PHP, Python, Ruby, NodeJS
+- VPN client installation
+- Hardening of Chrome and Firefox
 
 ## References and Sources
 OS Temper is built upon the works and ideas from other scripts and community discussions, you can find a list of the sources below.
