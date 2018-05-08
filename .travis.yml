@@ -1,0 +1,6 @@
+language: bash
+os:
+- osx
+sudo: required
+dist: trusty
+script: shellcheck *.sh
