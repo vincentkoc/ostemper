@@ -92,8 +92,7 @@ OS Temper is built upon the works and ideas from other scripts and community dis
 
 ## Contributing and Donations
 
-If you find something interesting or would like to contribute, please open issue and start disccussion. Feel free to fork and pull request.
-If OS Tamper has helped you out feel free to donate via BTC/ETH or to the EFF
+If you find something interesting or would like to contribute, please open issue and start disccussion. Feel free to fork and pull request. If this repo has helped you out feel free to donate via BTC/ETH or to the EFF
 - BTC: 14v9knBDAmJAMxWovuLfy7YkLDyfq8phNb
 - ETH: 0xe6fbd8de8157934767867022b7a8e8691d8df3dc
 - EFF: (https://supporters.eff.org/donate/button)
